@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <main>
+      <nav class="nav-flex nav-font">
+        <img class="logo-img" src="images/logo.svg" alt="logo of the company">
+          <ul class="inline-flex-box">
+          <li class="flex-20">Features <img class="arrow-up" src="images/icon-arrow-down.svg" alt="menu icon for dropdown" /></li>
+          <li class="flex-20">Company  <img class="arrow-up" src="images/icon-arrow-down.svg" alt="menu icon for dropdown" /></li>
+          <li class="flex-20">Careers</li>
+          <li class="flex-20">About</li>
+        </ul>
+        <button class="button-without-borders nav-button" type="button" name="button">Login</button>
+        <button class="special-button nav-button" type="button" name="button">Register</button>
+      </nav>
+      <menu class="features-dropdown-menu">
+        <li> <img src="images/icon-todo.svg" alt="icon for the to do list">Todo list</li>
+        <li> <img src="images/icon-calendar.svg" alt="icon for the to do list"> Calender</li>
+        <li> <img src="images/icon-reminders.svg" alt="icon for the to do list">Reminders</li>
+        <li> <img src="images/icon-planning.svg" alt="icon for the to do list">Planning</li>
+      </menu>
+      <menu class="company-dropdown-menu">
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </menu>
+      <section id="intro-section">
+        <header>
+          <h2>Make <br>remote work</h2>
+        </header>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button type="button" name="button">Learn more</button>
+        <footer>
+          <img src="images/client-audiophile.svg" alt="supporter of our website">
+          <img src="images/client-databiz.svg" alt="supporter of our website">
+          <img src="images/client-maker.svg" alt="supporter of our website">
+          <img src="images/client-meet.svg" alt="supporter of our website">
+        </footer>
+      </section>
+      <img class="large-img" src="images/image-hero-desktop.png" alt="Main design for the desktop side">
+    </main>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
